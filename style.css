@@ -1,0 +1,298 @@
+/*================ general styles section start ================== */
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: #707070;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+p {
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+figure {
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 6.5rem;
+}
+
+h2 {
+    margin: 0 0 1.5rem 0;
+    color: #121212;
+    font-size: 4.5rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #121212;
+    margin: 1.8rem 0;
+}
+
+h4 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fafafa;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*-------------------- general styles section end------------- */
+
+/*------------utility classes section start------------------  */
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.container-short {
+    max-width: 100rem;
+    margin: 0 auto;
+    width: 70%;
+}
+
+section {
+    margin-bottom: 10rem;
+}
+
+.split {
+    display: flex;
+}
+
+.split-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: #f35021;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    padding: 1.5rem 3rem;
+    font-size: 1.8rem;
+    display: inline-block;
+    white-space: nowrap;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    margin-top: 2rem;
+    padding: 1.5rem 5rem;
+    cursor: pointer;
+}
+
+.section-intro {
+    width: 50%;
+    margin: 3rem auto;
+}
+
+.inline-orange {
+    color: #f35021;
+}
+
+.background-image {
+    background-size: cover;
+    background-position: right;
+    background-blend-mode: overlay;
+}
+
+/*--------------utility classes section end------------------ */
+
+/* -------------banner section styles start------------------ */
+.banner {
+    padding: 15rem 0;
+    color: #fff;
+    background-image: url(./images/donation13.jpg),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8));
+}
+
+/*------- banner section styles end------------------*/
+
+/*-------- Donate-today section styles start-------- */
+.donation-amount {
+    gap: 2.2rem;
+    margin: 4rem 0;
+}
+
+.donation-amount p {
+    background-color: #fafafa;
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "inter", sans-serif;
+    padding: 4.3rem 2.2rem;
+}
+
+#donation-highlight {
+    border: 3px solid #ff5959;
+    border-radius: 5px;
+    color: #ff5959;
+    background-color: #ffeeee;
+}
+
+#other-amount {
+    display: block;
+    width: 100%;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(148, 141, 141, 0.2);
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    margin: 0 auto;
+    letter-spacing: 1.2px;
+}
+
+#other-amount::placeholder {
+    color: rgba(148, 141, 141, 0.5);
+}
+
+/*----------------- Donate-today section styles end------------*/
+
+/*----------------- Donation-plan section styles start------------*/
+.donation-card>*+* {
+    margin-left: 2rem;
+}
+
+.card {
+    text-align: left;
+    padding: 5.5rem 3rem 2rem;
+    border-radius: 5px;
+    flex-basis: calc((100% - 2rem) / 3);
+}
+
+.card-blue {
+    background-color: rgba(79, 157, 166, 0.1);
+}
+
+.card-pink {
+    background-color: rgba(255, 89, 89, 0.1);
+}
+
+.card-yellow {
+    background-color: rgb(255, 244, 214);
+}
+
+/*----------------- Donation-plan section styles end------------*/
+
+/*----------------- Recent-work section styles start-----------*/
+.current-program {
+    background-image: url(./images/donation3.jpg);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fafaface;
+    flex-direction: column;
+    padding: 5rem;
+    text-align: left;
+}
+
+.program-heading {
+    margin-bottom: 3rem;
+}
+
+.program-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.program-image {
+    width: 50%;
+    object-fit: cover;
+    object-position: right;
+}
+
+.program-status {
+    flex-wrap: wrap;
+    margin: 4rem 0 0 0;
+}
+
+.form-status {
+    flex-basis: 100%;
+}
+
+.input-status {
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+/*----------------- Recent-work section styles end------------*/
+
+/*----------------- Subscription section styles start------------*/
+.subscription-form {
+    padding: 7.6rem 0;
+    background-color: rgb(255, 244, 214);
+    border-radius: 5px;
+}
+
+#email {
+    padding: 1.5rem 3rem;
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
+    outline: 0px;
+    margin-right: 0;
+    font-size: 1.8rem;
+}
+
+#email::placeholder {
+    color: #aa9f9f;
+}
+
+.btn-subscription {
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -3px;
+}
+
+/*----------------- Subscription section styles end------------*/
+
+/*----------------- Footer section styles start------------*/
+
+footer {
+    padding: 3rem 0 0 0;
+    background-color: #0b0d17;
+    color: #d9dbe1;
+    /* font-size: 2.4rem; */
+}
+
+footer h3 {
+    color: #ff5959;
+    font-size: 3.6rem;
+    font-family: "lobster";
+}
+
+#copyright {
+    font-size: 1.5rem;
+}
+
+/*============= Footer section styles end================*/
